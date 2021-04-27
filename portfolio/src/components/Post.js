@@ -18,7 +18,7 @@ export default function Post() {
           },
           alt
         }
-      }`
+      }`,{ headers: { accept: "Accept: application/json" } }
       )
       .then((data) => setPost(data))
       .catch(console.error);
