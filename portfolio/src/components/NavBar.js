@@ -13,9 +13,15 @@ export default function NavBar() {
             activeClassName="text-white"
             className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
-           Ammar Dje
+           About Me 
           </NavLink>
-
+          <NavLink
+            to="/resume"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+          >
+            Resume
+          </NavLink>
           <NavLink
             to="/post"
             activeClassName="text-red-100 bg-red-700"
@@ -30,31 +36,25 @@ export default function NavBar() {
           >
             Projects
           </NavLink>
-          <NavLink
-            to="/about"
-            activeClassName="text-red-100 bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-          >
-            About Me!
-          </NavLink>
+
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon
-            url="https://twitter.com/kapehe_ok"
+            url="https://twitter.com/ammar97365153"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://youtube.com/c/kapehe"
+            url="https://www.youtube.com/channel/UC2G92GxjboknQZYvs-7ObUg"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="https://linkedin.com/in/kapehe"
+            url="https://www.linkedin.com/in/ammar-djebabla-519030190/"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
