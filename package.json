@@ -3,8 +3,13 @@
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.8.0",
     "cros": "^1.0.1",
+    "devicon-react-svg": "^0.2.3",
+    "react-devicon": "^0.1.9",
     "react-gitignore": "^1.0.12",
     "react-router-dom": "^5.2.0",
     "react-social-icons": "^5.1.1"
+  },
+  "devDependencies": {
+    "svg-inline-loader": "^0.8.2"
   }
 }

@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 
 import imageUrlBuilder from "@sanity/image-url";
+import Education from "./resume/Education.js";
+import Experience from "./resume/Experience.js";
+import Languages from "./resume/Languages.js";
+import Tools from "./resume/Tools.js";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -28,20 +32,17 @@ export default function Resume() {
 
   return (
     <main className="relative">
- 
-      <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-red-800 rounded-lg shadow-2xl lg:flex p-20">
-          <img
-            src={urlFor(author.authorImage).url()}
-            className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
-            alt="Kapehe"
-          />
+      <div className="p-8 pt-24  container mx-auto relative">
+        <section className="bg-red-600 rounded-lg shadow-2xl lg:flex p-10 ">
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-green-300 mb-4">
-              Hey there. I'm{" "}
-              <span className="text-green-100">{author.name}</span>
-            </h1>
-            <p className="text-green-200 text-lg">{author.bio}</p>
+          <div className="content px-24 ">
+            <div className="grid mt-8  gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                <Education/>
+                <Experience/>
+                <Languages/>
+                <Tools/>
+            </div>
+          </div>
           </div>
         </section>
       </div>
