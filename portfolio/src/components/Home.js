@@ -29,10 +29,10 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <div className="p-10 lg:pt-48 container mx-auto relative">
+      <div className="p-8 pt-24 container mx-auto relative">
         <AboutMe name={author.name} bio={author.bio} authorImage={urlFor(author.authorImage).url()}/>
       </div>
-      <div className="p-10 lg:pt-48 container mx-auto relative">
+      <div className="p-8 pt-24 container mx-auto relative">
         <Offers/>
       </div>
     </main>

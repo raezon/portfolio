@@ -1,4 +1,5 @@
 import React from "react";
+import ListOfOffers from "./ListOfOffers";
 
 
 export default function Offers() {
@@ -8,14 +9,15 @@ export default function Offers() {
 
   return (
 
-        <section className="bg-red-800 rounded-lg shadow-2xl lg:flex p-15 ">
+        <section className="bg-red-600 rounded-lg shadow-2xl lg:flex   ">
 
-          <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-green-300 mb-4">
+          <div className="text-lg flex flex-col justify-center pb-12 ">
+            <h1 className="cursive text-6xl text-white mb-4 pl-12">
               What I offer
-              <span className="text-green-100"></span>
+             
             </h1>
-            <p className="text-green-200 text-lg"></p>
+            <ListOfOffers/>
+
           </div>
         </section>
       
