@@ -16,7 +16,7 @@ export default function Languages() {
         <div className="flex flex-col ">
         <div className="bg-white shadow-md  rounded-3xl p-4 pt-10">
             <div className="flex-none lg:flex">
-               <h1 className="cursive text-5xl text-black mb-3 pl-12">
+               <h1 className="bold text-4xl text-black mb-3 pl-12">
                         Language & Framework
                 </h1>
                 
@@ -24,7 +24,7 @@ export default function Languages() {
             </div>
            
             {languages.map(function(language) {
-              return  <div className="flex-none  "><ProgressBar done={language.pourcent} title={language.title}/></div>;
+              return  <div className="flex-none   "><ProgressBar  done={language.pourcent} title={language.title}/></div>;
                     })}
             
             

@@ -5,7 +5,7 @@ export default function Education() {
         <div className="flex flex-col ">
             <div className="bg-white shadow-md  rounded-3xl p-4">
                 <div className="flex-none lg:flex">
-                   <h1 className="cursive text-5xl text-black mb-3 pl-12">
+                   <h1 className="bold text-4xl text-black mb-3 pl-12">
                             Education
                     </h1>
                     
@@ -13,7 +13,7 @@ export default function Education() {
                 </div>
                 <div className="flex-none lg:flex">
                   
-                    <h2 className="cursive text-3xl text-black mb-4 pl-12">
+                    <h2 className="bold text-3xl text-black mb-4 pl-12">
                     Computer Science Engineering
                     </h2>
                 </div>

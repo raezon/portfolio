@@ -13,27 +13,14 @@ function urlFor(source) {
 }
 
 export default function Resume() {
-  const [author, setAuthor] = useState(null);
+  
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-        name,
-        "bio": bio[0].children[0].text,
-        "authorImage": image.asset->url
-      }`
-      )
-      .then((data) => setAuthor(data[0]))
-      .catch(console.error);
-  }, []);
 
-  if (!author) return <div>Loading...</div>;
 
   return (
     <main className="relative">
       <div className="p-8 pt-24  container mx-auto relative">
-        <section className="bg-red-600 rounded-lg shadow-2xl lg:flex p-10 ">
+        <section className="rounded-lg shadow-2xl lg:flex p-10 " style={{"background": 'linear-gradient(to left, #F2709C, #FF9472)'}}>
           <div className="text-lg flex flex-col justify-center">
           <div className="content px-24 ">
             <div className="grid mt-8  gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">

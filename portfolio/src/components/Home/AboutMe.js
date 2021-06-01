@@ -9,7 +9,7 @@ export default function AboutMe(props) {
 
   return (
 
-    <section className="bg-red-600 rounded-lg shadow-2xl lg:flex p-10 ">
+    <section className="rounded-lg shadow-2xl lg:flex p-10 " style={{"background": 'linear-gradient(to left, #F2709C, #FF9472)'}}>
     <img
       src={props.authorImage}
       className="rounded w-32 h-32 lg:w-64 lg:h-56 mr-8"
