@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Experience() {
     return (
-    <div className="flex flex-col ">
+        <div className="flex flex-wrap -m-3 ">
         <div className="bg-white shadow-md  rounded-3xl p-4 pt-10">
-            <div className="flex-none lg:flex">
-               <h1 className="bold text-4xl text-black mb-3 pl-12">
+            <div className="flex-none flex">
+               <h1 className="bold sm:text-1xl lg:text-3xl xl:text-4xl sm:w-2/5 text-black mb-3 pl-12">
                     Experience
                 </h1>
                 

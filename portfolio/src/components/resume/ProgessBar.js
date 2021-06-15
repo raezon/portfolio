@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import  './ProgressBar.css';
 
 
-import DevIcon from "devicon-react-svg";
-const devIconStyle = {
-    fill: "#6d6875",
-    width: "30px",
-};
  const ProgressBar = ({done,title}) => {
 	const [style, setStyle] = React.useState({});
 	
@@ -20,15 +15,18 @@ const devIconStyle = {
 	
 	
 	return (
-		<div className="progress">
+		<div className="progress ">
 			<div className="progress-done pl-12" style={style}>
                 
-                <div className="absolute left-0 top-0 h-16 w-16 ">
-                    <DevIcon icon={title} style={devIconStyle} viewBox="0 0 32 32"/>
+                <div className="absolute left-0 top-0  w-16 px-2 pt-1">
+               
+                    <i className={title}></i>
+               
                 </div>
                
                 <div className="px-40">
                   {done}%
+                  
                 </div>
 				
 			</div>

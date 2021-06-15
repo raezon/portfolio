@@ -23,6 +23,7 @@ export default function Home() {
       )
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
+     
   }, []);
 
   if (!author) return <div>Loading...</div>;

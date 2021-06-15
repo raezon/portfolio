@@ -5,18 +5,90 @@
 	margin: 15px 0;
 	height: 30px;
 	width: 300px;
+	
 }
 
 .progress-done {
-	background: linear-gradient(to left, #F2709C, #FF9472);
-	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
-	border-radius: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 0;
-	opacity: 0;
-	transition: 1s ease 0.3s;
-}
+		background: linear-gradient(to left, #F2709C, #FF9472);
+		box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+		border-radius: 20px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width:0;
+		opacity: 0;
+		transition: 1s ease 0.3s;
+	}
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {
+		.progress {
+			background-color: #d8d8d8;
+			border-radius: 20px;
+			position: relative;
+			margin: 15px 0;
+			height: 30px;
+			width: 70%;
+			
+		}
+		.progress-done {
+			background: linear-gradient(to left, #F2709C, #FF9472);
+		box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+		border-radius: 20px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		opacity: 0;
+		transition: 1s ease 0.3s;
+		width:70%;
+	}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+	.progress {
+		background-color: #d8d8d8;
+		border-radius: 20px;
+		position: relative;
+		margin: 15px 0;
+		height: 30px;
+		
+		
+	}
+	.progress-done {
+		background: linear-gradient(to left, #F2709C, #FF9472);
+		box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+		border-radius: 20px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+		opacity: 0;
+		transition: 1s ease 0.3s;
+		width:100px;
+	}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+	.progress-done {
+		width:80%;
+	}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+	.progress-done {
+		width:100%;
+	}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	.progress-done {	width:100%;}
+  }

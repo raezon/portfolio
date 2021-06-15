@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.textColored{
+  background: linear-gradient(to left, #F2709C, #FF9472);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,7 +19,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
