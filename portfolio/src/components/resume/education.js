@@ -2,10 +2,11 @@ import React from 'react'
 
 export default function Education() {
     return (
-        <div className="flex flex-wrap -m-3 ">
-            <div className="bg-white shadow-md  rounded-3xl p-4">
-                <div className="flex-none flex">
-                   <h1 className="bold sm:text-1xl lg:text-3xl xl:text-4xl sm:w-2/5 text-black mb-3 pl-12">
+        <div className="flex flex-wrap justify-center -m-3 md:w-full lg:w-full xl:w-full w-screen ">
+             <div className=" md:w-1/3 lg:w-full xl:w-full w-64  flex flex-col ">
+        <div className="bg-white shadow-md  rounded-3xl p-4 pt-10 pb-6 ">
+            <div className="flex-none flex">
+               <h1 className="bold text-2xl lg:text-3xl xl:text-4xl sm:w-2/5 text-black mb-3 pl-12">
                             Education
                     </h1>
                     
@@ -13,7 +14,7 @@ export default function Education() {
                 </div>
                 <div className="flex-none lg:flex">
                   
-                    <h2 className="bold sm:text-1xl lg:text-3xl xl:text-4xl text-black mb-4 pl-12">
+                    <h2 className="bold text-1xl lg:text-2xl xl:text-2xl text-black mb-4 pl-12">
                     Computer Science Engineering
                     </h2>
                 </div>
@@ -27,6 +28,7 @@ export default function Education() {
                     
                 </div>
             </div>
+        </div>
         </div>
     )
 }

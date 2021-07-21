@@ -11,7 +11,7 @@ import  './ProgressBar.css';
 			width: `${done}%`
 		}
 		setStyle(newStyle);
-      });
+      },[]);
 	
 	
 	return (

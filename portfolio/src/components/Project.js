@@ -24,6 +24,7 @@ export default function Project() {
   }, []);
 
   return (
+
     <main className="bg-green-100 min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
@@ -34,8 +35,8 @@ export default function Project() {
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-7001">
+              <article className="relative rounded-lg shadow-xl bg-white xl:p-16 lg:p-16 md:p-16 p-4">
+                <h3 className="text-gray-800 xl:text-3xl lg:text-3xl md:text-3xl text-2xl font-bold mb-2 hover:text-red-7001">
                   <a
                     href={project.link}
                     alt={project.title}
