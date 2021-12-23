@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ListOfOffers() {
   return (
-    <div className="content lg:px-20 xl:px-20 px-12  ">
+    <div className="content lg:px-20 xl:px-20 flex items-center justify-center  ">
       <div className="grid mt-8  gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
         <div className="flex justify-start    w-48 lg:w-auto    h-100    ">
           <div className="bg-white shadow-md  rounded-3xl p-4">
