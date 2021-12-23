@@ -109,7 +109,7 @@ ul {
     z-index: 1;
     height: 0;
     width: 0;
-    background-color: rgba(200, 21, 55, 0.7);
+    /*background-color: rgba(200, 21, 55, 0.7);*/
     opacity: 0;
     transition: opacity 1s ease 0.1s;
   }
